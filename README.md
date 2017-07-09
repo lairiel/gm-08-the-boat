@@ -1,1 +1,1 @@
-gm-08-the-boat
+https://rawgit.com/lairiel/gm-08-the-boat/master/index.html
