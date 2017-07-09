@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>The Boat</title>
+  <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Lobster', cursive;
+  } 
+
+ .header {
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: #fe8175;
+    font-family: 'Lobster', cursive;
+}
+
+  .main {
+    width: auto;
+    height: 537px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .footer {
+    width: auto;
+    height: 55px;
+    font-size: 27px;
+    color: white;
+    background-color: #fe8175;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .footer-frase {
+    width: 470px;
+    height: 55px;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    /*background-color: red;*/
+    position: absolute;
+    left: 34%;
+  }
+
+  .wave {
+    width: 100%;
+    height: 178px;
+    background-image: url("./img/wav.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    z-index: 2;
+  }
+
+  .boat {
+    height: 262px;
+    background-image: url(./img/boat-3-2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 228px;
+    left: 10px;
+    z-index: 3;
+    cursor: pointer;
+    width: 200px;
+  }
+
+  .cloud {
+    height: 100px;
+    background-image: url(./img/cloud-2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    width: 200px;
+  }
+
+  .cloud-1 {
+    top: 58px;
+    left: 50px;
+    animation-name: fly;
+    animation-duration: 20s;
+  }
+
+  .cloud-2 {
+    top: 178px;
+    left: 464px;
+    animation-name: fly;
+    animation-duration: 25s;
+  }
+
+  .cloud-3 {
+    top: 108px;
+    left: 850px;
+    animation-name: fly;
+    animation-duration: 35s;
+  }
+
+  .cloud-4 {
+    top: 30px;
+    left: 1148px;
+    animation-name: fly;
+    animation-duration: 40s;
+  }
+
+  .cloud-5 {
+    top: 275px;
+    left: 1148px;
+    animation-name: fly;
+    animation-duration: 50s;
+  }
+
+  @keyframes move { 
+    to {left: 1400px; }
+}
+
+ /* @keyframes fly { 
+    to {left: -1500px; }
+}*/
+
+  .boat:hover {
+    animation-name: move;
+    animation-duration: 17s;
+}
+
+   </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="header">Отправь кораблик в плаванье!</div>
+    <div class="main">
+      <div class="wave"></div>
+      <div class="boat"></div>
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="cloud cloud-4"></div>
+      <div class="cloud cloud-5"></div>
+    </div>
+    <div class="footer"><div class="footer-frase"></div></div>
+  </body>
+  </html>
+
+  <script type="text/javascript">
+  </script>
